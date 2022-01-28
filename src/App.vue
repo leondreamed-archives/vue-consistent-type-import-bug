@@ -6,7 +6,7 @@ type ComponentType = typeof MyComponent extends new () => infer T ? T : never;
 
 const myRef = ref<ComponentType>();
 onMounted(() => {
-	myRef.value?.printHello();
+	console.log(myRef.value?.printHello)
 });
 </script>
 
